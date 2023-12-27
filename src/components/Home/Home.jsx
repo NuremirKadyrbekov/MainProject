@@ -10,7 +10,7 @@ import Elnura from '../Elnura/Elnura'
 import Eldana from '../Eldana/Eldana'
 import Munara from '../Munara/Munara'
 
-function Home() {
+function Home () {
   return (
     <div>
         <Aida/>
