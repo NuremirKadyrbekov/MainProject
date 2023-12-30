@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 function Baimyrza() {
   const [num1, setNum1] = useState('');
   const [num2, setNum2] = useState('');

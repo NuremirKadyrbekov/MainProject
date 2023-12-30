@@ -1,7 +1,6 @@
 import React from "react";
 import './Elnura.css'
-import medicine from '../Assets/medicine.png'
-
+import medicine from '../../Assets/medicine.png'
 const Elnura = () => {
     return (
         <div className="shops">

@@ -3,6 +3,8 @@ import Munara from "./components/Munara/Munara";
 import './components/Munara/Munara.css';
 import IMG from './components/Munara/141.jpg'
 import { Ayat } from "./components/Ayat/Ayat";
+import Elnura from "./components/Elnura/Elnura";
+import Baimyrza from "./components/Baimyrza/Baimyrza";
 
 
 function App() {
@@ -26,7 +28,8 @@ function App() {
     <img className='img' src={IMG} alt="" />
     </Munara> 
     <Ayat />
-
+    <Elnura/>
+    <Baimyrza/>
   </div>
 
 
