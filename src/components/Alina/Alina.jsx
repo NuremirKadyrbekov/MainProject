@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowDownOutlined, ArrowUpOutlined } from '@ant-design/icons';
 import { Card, Col, Row, Statistic } from 'antd';
-const App = () => (
+const Alina = () => (
   <Row gutter={16}>
     <Col span={12}>
       <Card bordered={false}>
@@ -33,4 +33,4 @@ const App = () => (
     </Col>
   </Row>
 );
-export default App;
+export default Alina;
