@@ -29,13 +29,7 @@ function Anatai() {
               <p className={css.title}>{el.title}</p>
               <br />
               <p className={css.lorem}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                atque quasi incidunt quibusdam hic autem culpa unde minima quae
-                dolorum nobis tempore ut, odit impedit minus corrupti quaerat
-                consequatur laudantium. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Amet atque quasi incidunt quibusdam hic autem
-                culpa unde minima quae dolorum nobis tempore ut, odit impedit
-                minus corrupti quaerat consequatur laudantium.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
           </div>
