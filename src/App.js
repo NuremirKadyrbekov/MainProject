@@ -1,13 +1,13 @@
-<<<<<<< HEAD
-import { Ayat } from "./components/Ayat/Ayat";
 
+import { Ayat } from "./components/Ayat/Ayat";
 
 function App() {
   return (
     <div className="App">
        <Ayat />
     </div>
-=======
+  )
+}
 import { useState } from "react";
 import Munara from "./components/Munara/Munara";
 import './components/Munara/Munara.css';
@@ -35,8 +35,7 @@ function App() {
     </Munara> 
 
   </div>
->>>>>>> 13f0af9acf70a4ee74ec777c338faf0c445773b5
-  );
+  )
 };
      
 
