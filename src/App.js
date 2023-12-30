@@ -4,6 +4,7 @@ import './components/Munara/Munara.css';
 import IMG from './components/Munara/141.jpg'
 import { Ayat } from "./components/Ayat/Ayat";
 
+
 function App() {
   const [Modal, setModal] = useState(false);
 
@@ -31,6 +32,7 @@ function App() {
 
 
 
+  
   );
 };
      
