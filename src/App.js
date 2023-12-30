@@ -8,6 +8,7 @@ import Elnura from "./components/Elnura/Elnura";
 import Baimyrza from "./components/Baimyrza/Baimyrza";
 import Anatai from "./components/Anatai/Anatai";
 import Alina from "./components/Alina/Alina";
+
 function App() {
   const [Modal, setModal] = useState(false);
 
