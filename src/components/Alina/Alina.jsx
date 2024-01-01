@@ -33,7 +33,9 @@ const Alina = () => (
       </Card>
     </Col>
     <Link to="/">
-      <button style={{position: 'absolute', bottom: 10, left: 10}}>Артка</button>
+      <button style={{ position: "absolute", bottom: 10, left: 10 }}>
+        Артка
+      </button>
     </Link>
   </Row>
 );

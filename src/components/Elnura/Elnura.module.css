@@ -1,72 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
 }
 
-.shops{
-    width: 65%;
-    height: 60vh;
-    display: flex;
-    margin: auto;
-    padding: 0px 140px;
-    margin-bottom: 150px;
-    background: #AFC8AD;
+.shops {
+  width: 65%;
+  height: 60vh;
+  display: flex;
+  margin: auto;
+  padding: 0px 140px;
+  margin-bottom: 150px;
+  background: #afc8ad;
 }
 
-.shopsLeft{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.shopsLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.shopsLeft h1{
-    color: #171717;
-    font-size: 40px;
-    font-weight: 600;
+.shopsLeft h1 {
+  color: #171717;
+  font-size: 40px;
+  font-weight: 600;
 }
 
-.shopsLeft p{
-    color: #171717;
-    font-size: 16px;
-    font-weight: 600;
+.shopsLeft p {
+  color: #171717;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-.shopsLeft button{
-    width: 180px;
-    height: 40px;
-    border-radius: 35px;
-    background: #88AB8E;
-    border: none;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 20px;
-    cursor: pointer;
+.shopsLeft button {
+  width: 180px;
+  height: 40px;
+  border-radius: 35px;
+  background: #88ab8e;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
-.shopsRight{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-top: 20px;
+.shopsRight {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 20px;
 }
 
-.shopsRight img{
-    width: 250px;
-    height: 300px;
-    object-fit: cover;
+.shopsRight img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
 }
 
 .back {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }

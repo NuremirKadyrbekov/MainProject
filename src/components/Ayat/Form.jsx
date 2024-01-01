@@ -1,5 +1,5 @@
 import React from "react";
-import css from'./style.module.css';
+import css from "./style.module.css";
 
 export function Form({ onSubmit, onChange, value }) {
   return (

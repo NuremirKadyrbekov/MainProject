@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Eldana() {
-  return (
-    <div>Eldana</div>
-  )
+  return <div>Eldana</div>;
 }
 
-export default Eldana
+export default Eldana;

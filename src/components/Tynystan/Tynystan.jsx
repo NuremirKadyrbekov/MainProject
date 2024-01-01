@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Tynystan() {
-  return (
-    <div>Tynystan</div>
-  )
+  return <div>Tynystan</div>;
 }
 
-export default Tynystan
+export default Tynystan;

@@ -46,7 +46,9 @@ function Munara({ isOpen, onClose, children }) {
               );
             })}
             <div className={css.buttonBorders}>
-              <button className={css.primaryButton} onClick={onClose}>Закрыть</button>
+              <button className={css.primaryButton} onClick={onClose}>
+                Закрыть
+              </button>
             </div>
           </div>
         </div>

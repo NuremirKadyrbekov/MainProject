@@ -1,16 +1,13 @@
-import React from 'react'
-
+import React from "react";
 
 const API_URL = "https://api.github.com";
 
 export async function fetchResults(query) {
-   try {
+  try {
     const response = await fetch(`${API_URL}/search/users?q=${query}`);
     const json = await response.json();
     return json.items || [];
-   } catch (e) {
+  } catch (e) {
     throw new Error(e);
-   } 
+  }
 }
-
-

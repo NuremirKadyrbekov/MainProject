@@ -1,16 +1,16 @@
-.main{
-    margin-left: 370px;
+.main {
+  margin-left: 370px;
 }
 
-img{
-    height: 560px;
-    width: 500px;
+img {
+  height: 560px;
+  width: 500px;
 }
-.text{
-    width: 500px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    box-shadow: 5px 0px 5px 0px;
+.text {
+  width: 500px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  box-shadow: 5px 0px 5px 0px;
 }
-.text:hover{
-    color-scheme: red;
+.text:hover {
+  color-scheme: red;
 }
