@@ -64,3 +64,23 @@
   box-shadow: 4px 4px 40px 0px rgba(255, 255, 255, 0.2);
   transition: 0.3s;
 }
+
+
+.back {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background: #212121;
+}
+.back:hover {
+  color: #fff;
+  background: linear-gradient(
+    324deg,
+    rgba(167, 37, 20, 1) 0%,
+    rgba(255, 0, 159, 1) 30%,
+    rgba(255, 101, 47, 1) 100%
+  );
+  box-shadow: 4px 4px 40px 0px rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+  transform:scale(1.125);
+}

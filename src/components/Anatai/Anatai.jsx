@@ -1,6 +1,7 @@
 import React from "react";
 import css from "./Anatai.module.css";
 import { WindowsFilled, AndroidFilled, AppleFilled } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 function Anatai() {
   const data = [
@@ -24,7 +25,7 @@ function Anatai() {
         return (
           <div>
             <div className={css.card}>
-              {el.element} 
+              {el.element}
               <br />
               <p className={css.title}>{el.title}</p>
               <br />
@@ -35,6 +36,9 @@ function Anatai() {
           </div>
         );
       })}
+      <Link to="/">
+        <button className={css.back}>Закрыть</button>
+      </Link>
     </div>
   );
 }

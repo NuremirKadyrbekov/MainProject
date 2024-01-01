@@ -1,42 +1,24 @@
-
-import { useState } from "react";
-import Munara from "./components/Munara/Munara";
-import './components/Munara/Munara.css';
-import IMG from './components/Munara/141.jpg'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Ayat } from "./components/Ayat/Ayat";
 import Elnura from "./components/Elnura/Elnura";
 import Baimyrza from "./components/Baimyrza/Baimyrza";
 import Anatai from "./components/Anatai/Anatai";
 import Alina from "./components/Alina/Alina";
+import Home from "./Page/Home";
+
 function App() {
-  const [Modal, setModal] = useState(false);
-
-  const openModal = () => {
-    setModal(true);
-  };
-
-  const closeModal = () => {
-    setModal(false);
-  };
-
-
-
   return (
-    <div>
-
-      <button className="btn" onClick={openModal}>Открыть модальное окно</button>
-      <Munara isOpen={Modal} onClose={closeModal}>
-        <img className='img' src={IMG} alt="" />
-      </Munara>
-      <Ayat />
-      <Elnura />
-      <Baimyrza />
-      <Anatai />
-      <Alina/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Ayat" element={<Ayat />} />
+        <Route path="/Elnura" element={<Elnura />} />
+        <Route path="/Baimyrza" element={<Baimyrza />} />
+        <Route path="/Anatai" element={<Anatai />} />
+        <Route path="/Alina" element={<Alina />} />
+      </Routes>
+    </Router>
   );
-};
-
-
+}
 
 export default App;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 function Baimyrza() {
   const [num1, setNum1] = useState('');
   const [num2, setNum2] = useState('');
@@ -53,6 +54,9 @@ function Baimyrza() {
       <input type="number" name="num2" value={num2} onChange={handleInputChange} />
       <button onClick={calculate}>Вычислить</button>
       <div>Результат: {result}</div>
+      <Link to="/">
+        <button style={{position: 'absolute', bottom: 10, left: 10}}>Назад</button>
+      </Link>
     </div>
   );
 }
