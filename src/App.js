@@ -21,8 +21,7 @@ function App() {
 
   const closeModal = () => {
     setModal(false);
-  };
-       
+  };       
 
   return (
     <div>

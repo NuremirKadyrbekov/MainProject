@@ -20,14 +20,17 @@ form {
     height: 45px;
     border: 2px solid green;
     border-radius: 7px;
-    width: 300px;
+    width: 270px;
     padding-right: 5px;
 }
 button {
-    height: 50px;
+    height: 45px;
     border-radius: 7px;
     width: 215px;
     background-color: rgb(77, 232, 56);
+}
+.user:hover {
+    box-shadow: 1px 2px 3px 4px rgb(83, 143, 83);
 }
 img {
     width: 50px;
