@@ -23,6 +23,12 @@ function Home () {
         <Elnura/>
         <Eldana/>
         <Munara/>
+        <button>Munara</button>
+        <button>Ayat</button>
+        <button>Elnura</button>
+        <button>Baimyrza</button>
+        <button>Anatai</button>
+        <button>Alina</button>
     </div>
   )
 }
