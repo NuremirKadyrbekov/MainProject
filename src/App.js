@@ -1,5 +1,3 @@
-
-
 import { useState } from "react";
 import Munara from "./components/Munara/Munara";
 import './components/Munara/Munara.css';
@@ -13,8 +11,9 @@ import Anatai from "./components/Anatai/Anatai";
 import Alina from "./components/Alina/Alina";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-function App() {
-  const [Modal, setModal] = useState(false);
+
+const App = () => {
+  const [modal, setModal] = useState(false);
 
   const openModal = () => {
     setModal(true);
@@ -24,32 +23,29 @@ function App() {
     setModal(false);
   };
 
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />}>
-          <Route path="/munara" element={<Munara />}>
-            <Route path="/Ayat" element={<Ayat />}>
-              <Route path="/Elnura" element={<Elnura />}>
-                <Route path="/Baimyrza" element={<Baimyrza />}>
-                  <Route path="/Anatai" element={<Anatai />}>
-                    <Route path="/Alina" element={<Alina />}>
-                      <button className="btn" onClick={openModal}>Открыть модальное окно</button>
-                      <Munara isOpen={Modal} onClose={closeModal}>
-                        <img className='img' src={IMG} alt="" />
-                      </Munara>
-                      </Route>
-                  </Route>
-                </Route>
-              </Route>
-            </Route>
-          </Route>
-        </Route>
-      </Routes>
-    </Router>
+  return (   
+    <div>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/munara" element={<Project category="munara" />} />
+          <Route path="/ayat" element={<Project category="ayat" />} />
+          <Route path="/elnura" element={<Project category="elnura" />} />
+          <Route path="/baimyrza" element={<Project category="baimyrza" />} />
+          <Route path="/anatai" element={<Project category="anatai" />} />
+          <Route path="/alina" element={<Project category="alina" />} />
+        </Routes>
+      </BrowserRouter>
+      <button className="btn" onClick={openModal}>
+        Open Modal
+      </button>
+      <Munara isOpen={modal} onClose={closeModal}>
+        <img className="img" src={IMG} alt="" />
+      </Munara>
+      <Ayat/>
+    </div>
   );
 };
-
-
 
 export default App;
