@@ -1,15 +1,15 @@
-
-import { useState } from "react";
+import React, { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
+import Project from "./Pages/Project";
 import Munara from "./components/Munara/Munara";
-import './components/Munara/Munara.css';
-import IMG from './components/Munara/141.jpg'
-import { Ayat } from "./components/Ayat/Ayat";
-import Elnura from "./components/Elnura/Elnura";
-import Baimyrza from "./components/Baimyrza/Baimyrza";
-import Anatai from "./components/Anatai/Anatai";
-import Alina from "./components/Alina/Alina";
-function App() {
-  const [Modal, setModal] = useState(false);
+import IMG from "./components/Munara/141.jpg";
+import Ayat from "./components/Ayat/Ayat"
+
+
+const App = () => {
+  const [modal, setModal] = useState(false);
 
   const openModal = () => {
     setModal(true);
@@ -19,24 +19,29 @@ function App() {
     setModal(false);
   };
 
-
-
   return (
     <div>
-
-      <button className="btn" onClick={openModal}>Открыть модальное окно</button>
-      <Munara isOpen={Modal} onClose={closeModal}>
-        <img className='img' src={IMG} alt="" />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/munara" element={<Project category="munara" />} />
+          <Route path="/ayat" element={<Project category="ayat" />} />
+          <Route path="/elnura" element={<Project category="elnura" />} />
+          <Route path="/baimyrza" element={<Project category="baimyrza" />} />
+          <Route path="/anatai" element={<Project category="anatai" />} />
+          <Route path="/alina" element={<Project category="alina" />} />
+        </Routes>
+      </BrowserRouter>
+      <button className="btn" onClick={openModal}>
+        Open Modal
+      </button>
+      <Munara isOpen={modal} onClose={closeModal}>
+        <img className="img" src={IMG} alt="" />
       </Munara>
-      <Ayat />
-      <Elnura />
-      <Baimyrza />
-      <Anatai />
-      <Alina/>
+      <Ayat/>
     </div>
   );
 };
-
-
 
 export default App;

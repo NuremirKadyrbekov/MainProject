@@ -44,5 +44,5 @@ export function Ayat() {
     </div>
   );
 }
-
+export default Ayat
 
