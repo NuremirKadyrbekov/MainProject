@@ -37,13 +37,14 @@ function App() {
                       <button className="btn" onClick={openModal}>Открыть модальное окно</button>
                       <Munara isOpen={Modal} onClose={closeModal}>
                         <img className='img' src={IMG} alt="" />
-                      </Munara>                      
-                    </Route>
+                      </Munara>
+                      </Route>
                   </Route>
                 </Route>
               </Route>
             </Route>
           </Route>
+        </Route>
       </Routes>
     </Router>
   );
