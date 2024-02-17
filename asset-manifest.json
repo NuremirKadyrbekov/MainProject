@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/MainProject/static/css/main.f82bb990.css",
-    "main.js": "/MainProject/static/js/main.80a1c3d5.js",
-    "static/media/medicine.png": "/MainProject/static/media/medicine.d6ef618f1ad7e86b7cd2.png",
-    "static/media/img1.png": "/MainProject/static/media/img1.741beb6bb215da9cab11.png",
-    "index.html": "/MainProject/index.html",
-    "main.f82bb990.css.map": "/MainProject/static/css/main.f82bb990.css.map",
-    "main.80a1c3d5.js.map": "/MainProject/static/js/main.80a1c3d5.js.map"
+    "main.css": "/analog-clock-react2/static/css/main.548b7ae6.css",
+    "main.js": "/analog-clock-react2/static/js/main.b54c3266.js",
+    "index.html": "/analog-clock-react2/index.html",
+    "main.548b7ae6.css.map": "/analog-clock-react2/static/css/main.548b7ae6.css.map",
+    "main.b54c3266.js.map": "/analog-clock-react2/static/js/main.b54c3266.js.map"
   },
   "entrypoints": [
-    "static/css/main.f82bb990.css",
-    "static/js/main.80a1c3d5.js"
+    "static/css/main.548b7ae6.css",
+    "static/js/main.b54c3266.js"
   ]
 }
